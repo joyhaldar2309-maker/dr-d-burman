@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0b766e">
+<meta name="description" content="Dr. D. Burman - Consultant Gynecologist & Infertility Specialist">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Dr. D. Burman | Personal Doctor App</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">DR</div><div><b>Dr. D. Burman</b><small>Personal Doctor App</small></div></div>
+  <button class="menu" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="doctor-photo photo-wrap">
+    <img src="doctor.png" alt="Dr. D. Burman">
+  </div>
+  <div class="hero-copy">
+    <span class="tag">CONSULTANT GYNECOLOGIST</span>
+    <h1>Dr. D. Burman</h1>
+    <p class="degree">MBBS, DNB, MS (OBS &amp; GNY)</p>
+    <p class="reg">Registration No. 77740 (WBMC)</p>
+    <p>Consultant Gynecologist &amp; Infertility Specialist</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+919609787825">📞 Appointment</a>
+      <a class="btn emergency" href="tel:+918617515713">🚨 Emergency</a>
+      <a class="btn whatsapp" href="https://wa.me/918240502823">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="eyebrow">ABOUT DOCTOR</div>
+  <h2>Compassionate care for women’s health</h2>
+  <p>Dr. D. Burman provides consultation and care in pregnancy, infertility and gynecological conditions, with a patient-focused approach.</p>
+  <div class="stats">
+    <div><b>MBBS</b><span>Medical Degree</span></div>
+    <div><b>DNB</b><span>Specialized Training</span></div>
+    <div><b>MS</b><span>Obs &amp; Gynae</span></div>
+  </div>
+</section>
+
+<section id="services" class="section alt">
+  <div class="eyebrow">SERVICES</div>
+  <h2>Specialized care</h2>
+  <div class="grid">
+    <article><i>🤰</i><h3>High-Risk Pregnancy Care</h3><p>Support and monitoring for high-risk pregnancies.</p></article>
+    <article><i>👶</i><h3>Normal &amp; Cesarean Delivery</h3><p>Delivery care based on individual clinical needs.</p></article>
+    <article><i>🌸</i><h3>Infertility Treatment</h3><p>Evaluation and treatment guidance for infertility.</p></article>
+    <article><i>💗</i><h3>PCOS / PCOD</h3><p>Assessment and management of PCOS/PCOD.</p></article>
+    <article><i>🩺</i><h3>Gynecological Care</h3><p>Consultation for common gynecological concerns.</p></article>
+    <article><i>📋</i><h3>Women’s Health Consultation</h3><p>Personalized consultation and follow-up care.</p></article>
+  </div>
+</section>
+
+<section id="appointment" class="section">
+  <div class="eyebrow">APPOINTMENT</div>
+  <h2>Request an appointment</h2>
+  <form onsubmit="sendAppointment(event)">
+    <input id="name" required placeholder="Patient name">
+    <input id="phone" required type="tel" placeholder="Mobile number">
+    <select id="service" required>
+      <option value="">Select service</option>
+      <option>Gynecological Consultation</option>
+      <option>Infertility Treatment</option>
+      <option>PCOS / PCOD</option>
+      <option>Pregnancy Care</option>
+      <option>Delivery Consultation</option>
+    </select>
+    <input id="date" type="date">
+    <textarea id="message" rows="3" placeholder="Short message (optional)"></textarea>
+    <button class="btn primary full" type="submit">Send Appointment Request on WhatsApp</button>
+  </form>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="eyebrow">CONTACT</div>
+  <h2>Get in touch</h2>
+  <div class="contact-card">
+    <a href="tel:+919609787825">📞<span>Appointment</span><b>9609787825</b></a>
+    <a href="tel:+918617515713">🚨<span>Emergency</span><b>8617515713</b></a>
+    <a href="https://wa.me/918240502823">💬<span>Doctor WhatsApp</span><b>8240502823</b></a>
+  </div>
+  <div class="actions">
+    <a class="btn primary" href="tel:+919609787825">Call Appointment</a>
+    <a class="btn emergency" href="tel:+918617515713">Emergency Call</a>
+    <a class="btn whatsapp" href="https://wa.me/918240502823">WhatsApp Doctor</a>
+  </div>
+</section>
+</main>
+
+<nav class="bottom">
+  <a href="#about">⌂<span>Home</span></a>
+  <a href="#services">♡<span>Services</span></a>
+  <a href="#appointment" class="book">＋<span>Appointment</span></a>
+  <a href="#contact">☎<span>Contact</span></a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>
